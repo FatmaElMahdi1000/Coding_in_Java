@@ -9,16 +9,13 @@ public class ProductOfTwo {
     }
     public static void main(String[] args)
     {
-        //create scanner objects
-        //a
-        Scanner a_obj = new Scanner(System.in);
-        //b
-        Scanner b_obj = new Scanner(System.in);
-        //Reading 2 double numbers
+        //create scanner object, one is enough for all inputs
+        Scanner obj = new Scanner(System.in);
+
         System.out.print("Enter a (the first number): ");
-        double a = a_obj.nextDouble();
+        double a = obj.nextDouble();
         System.out.print("Enter b (the 2nd number): ");
-        double b = b_obj.nextDouble();
+        double b = obj.nextDouble();
         //accessing class to access the product method later
         ProductOfTwo result = new ProductOfTwo();
         double res = result.product(a, b);
