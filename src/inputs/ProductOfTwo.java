@@ -20,5 +20,7 @@ public class ProductOfTwo {
         ProductOfTwo result = new ProductOfTwo();
         double res = result.product(a, b);
         System.out.println("Product of a * b = " + res);
+        //we must close the input stream we opened using Scanner.
+        obj.close();
     }
 }
