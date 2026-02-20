@@ -15,6 +15,5 @@ public class Main {
         float res2 = obj2.division(a, b);
         System.out.println("The division result = " + res2);
 
-
     }
 }
