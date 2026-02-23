@@ -1,6 +1,5 @@
 package Arithmetic;
 import java.util.Scanner;//for inputs
-
 public class Rectangle {
     //area and Perimeter computation
     public String Rect(double height, double width)
@@ -8,11 +7,9 @@ public class Rectangle {
         //area = a*b perimeter= 2(a + b)
         return "Area = "+ height*width + '\n'+
                 "perimeter = "+ 2*(height + width) + '\n';
-
     }
     public static void main(String[] args)
     {
-
         Scanner obj = new Scanner(System.in);
         System.out.print("Enter the height: ");
         double height = obj.nextDouble();
@@ -24,6 +21,5 @@ public class Rectangle {
         System.out.println(result);
         //Closing the input stream
         obj.close();
-
     }
 }
