@@ -47,6 +47,8 @@ public class SwapTwoVariables {
         //accessing the class to access the method
         SwapTwoVariables object = new SwapTwoVariables();
         object.swapping(numbers, arr_size);
+        //to close input stream opened by Scanner
+        obj.close();
 
     }
 }
