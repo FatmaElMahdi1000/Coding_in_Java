@@ -19,5 +19,6 @@ public class MultiplicationTable {
         //class object to access the method
         MultiplicationTable class_obj = new MultiplicationTable();
         class_obj.multi(num);
+        obj.close();
     }
 }
