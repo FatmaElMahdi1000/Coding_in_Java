@@ -1,4 +1,4 @@
-package LectureProblem;
+package StaticModifierInJAVA;
 
 public class FriendANDStaticModifier {
     //attribute

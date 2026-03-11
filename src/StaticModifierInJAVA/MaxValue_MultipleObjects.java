@@ -1,4 +1,4 @@
-package LectureProblem;
+package StaticModifierInJAVA;
 import java.util.Scanner;
 
 public class MaxValue_MultipleObjects

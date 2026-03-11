@@ -1,4 +1,4 @@
-package LectureProblem;
+package StaticModifierInJAVA;
 
 //non static here, observe we've accessed the method using an instance or created object:
 //

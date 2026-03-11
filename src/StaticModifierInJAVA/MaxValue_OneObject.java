@@ -1,4 +1,4 @@
-package LectureProblem;
+package StaticModifierInJAVA;
 import java.util.Scanner;
 //max class
 public class MaxValue_OneObject {
