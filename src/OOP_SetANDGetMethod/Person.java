@@ -1,4 +1,4 @@
-package OOP_Person_Class;
+package OOP_SetANDGetMethod;
 
 public class Person {
     //private for Encapsulation + information hiding: // Private attributes: No one can touch these directly
@@ -6,14 +6,14 @@ public class Person {
     private int age;
 
 
-    //constructs to manipilate the attributes
+    //constructs to manipulate the attributes
     Person(String Name, int age)
     {
         setAge(age);
         this.Name = Name;
         this.age = age;
     }
-    //setter to make an attribute writeable, , helps us accessing private attribute and overwrite
+    //setter to make an attribute writeable, helps us to access private attribute and overwrite
     void setAge(int age)
     {
         if(age <= 0)
@@ -22,10 +22,9 @@ public class Person {
         }
         this.age = age;
     }
-    //Getter to make an attribute readable, helps us accessing private attribute and read them
+    //Getter to make an attribute readable, helps us to access private attribute and read them
     String getName()
     {
-
         return this.Name;
     }
     //Getter to make an attribute readable

@@ -1,4 +1,4 @@
-package OOP_Person_Class;
+package OOP_SetANDGetMethod;
 
 public class Main {
     public static void main(String[] args)
