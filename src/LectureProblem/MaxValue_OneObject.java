@@ -1,13 +1,13 @@
 package LectureProblem;
 import java.util.Scanner;
 //max class
-public class MaxValue {
+public class MaxValue_OneObject {
     //attributes
     int size;
     //array and setting array size
     int[] numbers;
     //constructor
-    MaxValue()
+    MaxValue_OneObject()
     {
         this.size = 5;
         this.numbers = new int[size];
@@ -41,7 +41,7 @@ public class MaxValue {
 
     public static void main(String[] args)
     {
-        MaxValue object = new MaxValue();
+        MaxValue_OneObject object = new MaxValue_OneObject();
         System.out.println("Max Value is = " + object.max());
 
     }
