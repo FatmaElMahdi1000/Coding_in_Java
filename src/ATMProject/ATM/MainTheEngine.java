@@ -1,10 +1,7 @@
 package ATMProject.ATM;
 
-//Now, create a new file (e.g., ATMMain.java) in the same package.
-// This is where we will build the "Database"
 public class MainTheEngine {
     //added throws InterruptedException to add threads/ delays
-
     public static void main(String[] args) throws InterruptedException {
         //constructing the first user. adding entries, or building the database using construct method
         ATM user1 = new ATM(1000, "Fatma", "ElMahdi", 3333, 1000, 5000, "15-03-2026");
