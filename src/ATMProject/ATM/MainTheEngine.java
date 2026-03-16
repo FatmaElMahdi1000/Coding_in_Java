@@ -1,7 +1,7 @@
 package ATMProject.ATM;
 
 //Now, create a new file (e.g., ATMMain.java) in the same package.
-// This is where you will build your "Database" and the interaction loop.
+// This is where we will build the "Database"
 public class MainTheEngine {
     //added throws InterruptedException to add threads/ delays
 
