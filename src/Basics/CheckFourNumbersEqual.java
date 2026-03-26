@@ -28,6 +28,7 @@ public class CheckFourNumbersEqual
 
     public static void main(String[] args)
     {
+        CheckFourNumbersEqual obj1 = new CheckFourNumbersEqual();
         Scanner obj = new Scanner(System.in);
         ArrayList<Double> seq = new ArrayList<>();
         int counter = 1;
@@ -39,6 +40,7 @@ public class CheckFourNumbersEqual
             counter++;
         }
         System.out.println(seq);
+        obj1.EqualOrNot(seq);
 
     }
 
