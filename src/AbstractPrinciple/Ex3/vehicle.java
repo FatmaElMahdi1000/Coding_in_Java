@@ -27,7 +27,7 @@ public abstract class vehicle
     abstract String colour();
     //concrete method
 
-    int doubledspeed(int speed)
+    int doubledspeed()
     {
         return speed*2;
     }
