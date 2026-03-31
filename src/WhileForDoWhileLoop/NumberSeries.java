@@ -1,4 +1,4 @@
-package WhileLoop;
+package WhileForDoWhileLoop;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class NumberSeries {
