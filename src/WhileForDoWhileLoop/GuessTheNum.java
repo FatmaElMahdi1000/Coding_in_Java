@@ -1,13 +1,16 @@
 package WhileForDoWhileLoop;
 import java.util.*;
+import java.util.Random;
 public class GuessTheNum {
 
     public static void main(String[] args)
     {
-        double target = 5;
+        Random rnd = new Random();
+        //Holds a random number:
+        int target = rnd.nextInt(1, 101);
         Scanner obj = new Scanner(System.in);
         System.out.print("Guess a number : ");
-        double num = obj.nextDouble();
+        int num = obj.nextInt();
         while(num != target)
         {
             System.out.println("NOT A MATCH! TRY AGAIN!");
@@ -20,7 +23,7 @@ public class GuessTheNum {
                 System.out.println("TOO LOW!");
             }
             System.out.println("Your Next Guess: ");
-            num = obj.nextDouble();
+            num = obj.nextInt();
         }
         System.out.println("A MATCH, Congraaaatsss!");
     }
