@@ -1,9 +1,9 @@
 package MidTermRevision.ReferenceVsPrimitive;
 //Primitive data type
-public class salary {
+public class salaryPrimitiveExample{
 
     int EmpSalary;
-    salary(int EmpSalary)
+    salaryPrimitiveExample(int EmpSalary)
     {
         this.EmpSalary = EmpSalary;
     }
@@ -15,7 +15,7 @@ public class salary {
 
     public static void main(String[] args)
     {
-        salary salary1 = new salary(1000);
+        salaryPrimitiveExample salary1 = new salaryPrimitiveExample(1000);
         System.out.println(salary1.EmpSalary);
         int money = salary1.EmpSalary; //it took a copy of the salary 1000$, but if salary1.EmpSalary has
         //increased due to calling the method, the money variable stays 1000$ since it's a copy

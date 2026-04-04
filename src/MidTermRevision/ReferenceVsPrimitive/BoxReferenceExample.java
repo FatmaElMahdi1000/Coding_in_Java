@@ -1,6 +1,6 @@
 package MidTermRevision.ReferenceVsPrimitive;
 
-public class Box {
+public class BoxReferenceExample {
 
     //Box Attributes
     double width;
@@ -8,7 +8,7 @@ public class Box {
     double depth;
     //Box
     //parameterized constructor
-    Box(double width, double height, double depth)
+    BoxReferenceExample(double width, double height, double depth)
     {
         this.width = width;
         this.depth = depth;
@@ -16,19 +16,19 @@ public class Box {
     }
     //overloading concept
     //non-parameterized constructor
-    Box()
+    BoxReferenceExample()
     {
     }
     public static void main(String[] args)
     {
         //object of the parametrized constructor
-        Box box1 = new Box(3, 4, 5);
+        BoxReferenceExample boxReferenceExample1 = new BoxReferenceExample(3, 4, 5);
         //object of the non-parametrized constructor
-        Box box2 = new Box();
-        System.out.println(box1.depth);
-        System.out.println(box2.depth);//0 by default since it's created from non-parametrized constructor
-        Box box3 = box2;
-        System.out.println(box3.depth);
+        BoxReferenceExample boxReferenceExample2 = new BoxReferenceExample();
+        System.out.println(boxReferenceExample1.depth);
+        System.out.println(boxReferenceExample2.depth);//0 by default since it's created from non-parametrized constructor
+        BoxReferenceExample boxReferenceExample3 = boxReferenceExample2;
+        System.out.println(boxReferenceExample3.depth);
 
         //Notes:
         //In Java, any variable that refers
