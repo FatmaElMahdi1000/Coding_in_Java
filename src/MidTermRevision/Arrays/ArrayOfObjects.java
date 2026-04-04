@@ -1,4 +1,4 @@
-package MidTermRevision;
+package MidTermRevision.Arrays;
 
 public class ArrayOfObjects {
     //attributes
