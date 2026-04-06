@@ -73,7 +73,7 @@ public class Arithm {
     }
 
     //Prime number: can be evenly divide by 1 and itself ONLY, 1 is not a prime
-    String PrimeOrNot()
+    protected String PrimeOrNot()
     {
         if(number == 1)
         {
@@ -116,4 +116,14 @@ public class Arithm {
                 num2.PrimeOrNot());
     }
 
+}
+
+class trial
+{
+    public static void main(String[] args)
+
+    {
+        Arithm obj = new Arithm();
+        obj.PrimeOrNot();
+    }
 }
