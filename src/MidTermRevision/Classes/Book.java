@@ -21,6 +21,8 @@ public class Book
         this.PublishYear = PublishYear;
         this.Author = Author;
         this.NumOfCopies = NumOfCopies;
+        //increment the distinctBooks counter every time an object is created
+        DistinctBooks++;
     }
     public String getTitle() {
         return title;
@@ -97,7 +99,7 @@ public class Book
         //Arrays of objects
         Book[] books = new Book[3];
 
-        books[0]  = new Book("Java", "Schildt", 10, 2022, 135.50);
+        books[0] = new Book("Java", "Schildt", 10, 2022, 135.50);
         books[1] = new Book("C#", "Deitel", 3, 2021, 136);
         books[2] = new Book("Python", "john", 5, 2019, 130);
         System.out.println("Total Number of copies so far(All Books) = " + (books[0].NumOfCopies + books[1].NumOfCopies + books[2].NumOfCopies));
@@ -106,19 +108,30 @@ public class Book
 
         //After lending books
         books[0].BorrowBook(10);
-        books[1].BorrowBook(2); //Error
+        books[1].BorrowBook(2);
         books[2].BorrowBook(2);
 
-        if (!(books[0].getNumOfCopies() + books[1].getNumOfCopies() + books[2].getNumOfCopies() == 0)) {
-            JOptionPane.showMessageDialog(null, books[0].title + ": " + books[0].getNumOfCopies() + " Copies" + "\n" + books[1].title + ": " + books[1].getNumOfCopies() + " Copies" + "\n" +
-                    books[2].title + ": " + books[2].getNumOfCopies() + " Copies " + "\n");
+        // Calculate the total using your loop
+        int totalNumOfCopies = 0;
+        String details = ""; // Optional: Build the string dynamically for the JOptionPane
+
+        for (Book b : books) {
+            totalNumOfCopies += b.getNumOfCopies();
+
+            details += b.title + ": " + b.getNumOfCopies() + " Copies\n";
         }
-        else
-        {
+
+        // 2. Print to console
+        System.out.println("Total copies remaining: " + totalNumOfCopies);
+
+        if (totalNumOfCopies > 0) {
+            JOptionPane.showMessageDialog(null, details, "Remaining Stock", JOptionPane.INFORMATION_MESSAGE);
+        }
+        else {
             JOptionPane.showMessageDialog(null, "There are 0 Copies available now!");
         }
         //Which book is the most recent
-        //array of objects
+        //array of objects usage
 
         int MostRecent = 0;
         //tracking the book with the most recent year using its index
