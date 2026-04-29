@@ -5,7 +5,8 @@ import java.util.Scanner;
 public static class StackArr {
 
     int MaxSize = 6;
-    static int top = 0;
+    //Each class object should have its own top, so we keep this non-static
+    int top = 0;
     ArrayList<Integer> StArr = new ArrayList<>();
     Scanner obj = new Scanner(System.in);
     StackArr()
