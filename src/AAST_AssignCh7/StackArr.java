@@ -1,8 +1,10 @@
+package AAST_AssignCh7;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 //stack First in last out
-public static class StackArr {
+public class StackArr {
 
     int MaxSize = 6;
     //Each class object should have its own top, so we keep this non-static
@@ -63,16 +65,17 @@ public static class StackArr {
             System.out.println();
         }
     }
-}
 
-public static void main(String args[])
-{
-    StackArr Stack = new StackArr();
-    Stack.push();
-    Stack.push();
-    Stack.push();
-    Stack.Display();
-    Stack.pop();
-    Stack.Display();
 
+    public static void main(String args[])
+    {
+        StackArr Stack = new StackArr();
+        Stack.push();
+        Stack.push();
+        Stack.push();
+        Stack.Display();
+        Stack.pop();
+        Stack.Display();
+
+    }
 }
