@@ -1,5 +1,7 @@
 package OOPRelationships;
 import java.util.*;
+import javax.swing.*;
+
 //Association
 public class Customer
 {
@@ -54,21 +56,23 @@ public class Customer
             System.out.print("Enter the Name of the Customer#"+(i+1) +":");
             String name = sc.nextLine();
             custList[i].CustName = name;
-            sc.nextLine(); // Clear the buffer so the next name isn't skipped!
             System.out.print("Enter the Purchase Amount of the Customer#"+(i+1) +":");
             Double amount = sc.nextDouble();
             custList[i].PurchaseAmount = amount;
+            sc.nextLine(); // Clear the buffer so the next name isn't skipped!
             System.out.println("Customer: "+custList[i].CustName + " has only $"+custList[i].PurchaseAmount);
         }
         for(int j = 0; j <bookList.length; j++)
         {
             bookList[j] = new Book();
-            System.out.print("Enter the Book Price: ");
+            System.out.println("Enter the Book Price: ");
             Double BkPrice = sc.nextDouble();
+            sc.nextLine();
             //REVIEW
             bookList[j].setPrice(BkPrice);
-            System.out.print("Enter the Book Title: ");
+            System.out.println("Enter the Book Title: ");
             bookList[j].setTitle(sc.nextLine());
+            JOptionPane.showMessageDialog(null, "***Book Info:***\n"+bookList[j].getBookInfo());
         }
 
     }
