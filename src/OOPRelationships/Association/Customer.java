@@ -1,4 +1,4 @@
-package OOPRelationships;
+package OOPRelationships.Association;
 import java.util.*;
 import javax.swing.*;
 
@@ -67,6 +67,10 @@ public class Customer
             bookList[j] = new Book();
             System.out.println("Enter the Book Price: ");
             Double BkPrice = sc.nextDouble();
+            //After every nextDouble(), We must do:sc.nextLine()
+            //nextDouble() → reads 20, leaves \n
+            //nextLine() → reads \n → empty string
+
             sc.nextLine();
             //REVIEW
             bookList[j].setPrice(BkPrice);
