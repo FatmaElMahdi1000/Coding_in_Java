@@ -1,4 +1,4 @@
-package OOPRelationships.Association.Voting;
+package OOPRelationships.Aggregation.Voting;
 
 public class voting
 {
