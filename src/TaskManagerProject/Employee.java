@@ -43,6 +43,10 @@ public class Employee {
         this.empName = empName;
     }
 
+    public String getEmpEmail() {
+        return empEmail;
+    }
+
     public void setEmpEmail(String empEmail) {
         this.empEmail = empEmail;
     }

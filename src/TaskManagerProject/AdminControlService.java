@@ -172,7 +172,7 @@ public class AdminControlService {
     //Login & logout Service:
     public Employee Login(String EmpEmail) {
         //Search in the database for the emp. with the email
-        Employee FoundEmp = EmpDatabase.stream().filter(Employee -> Employee.getEmpID().equals(EmpEmail))
+        Employee FoundEmp = EmpDatabase.stream().filter(Employee -> Employee.getEmpEmail().equals(EmpEmail))
                 .findFirst().orElse(null);
         if (FoundEmp != null) {
             //Review
