@@ -22,5 +22,8 @@ public class mainEngine {
         dep1.addDoctor(doc1);
         System.out.println("Department: "+ dep1.getName() + " has " +dep1.getDepDoctorsCount() + " doctor/doctors");
 
+        Patient p1 = new Patient("Sahar", "XYZ");
+        System.out.println(doc1.consulting(p1));
+
     }
 }

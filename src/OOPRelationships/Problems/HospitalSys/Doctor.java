@@ -19,4 +19,10 @@ public class Doctor {
         this.DoctorName = DoctorName;
     }
 
+    // **Association Relationship (Doctor and Patient), patient class passed to doctor class method:**
+    String consulting(Patient patient)
+    {
+        return this.DoctorName + " is treating " + patient.getPatientName() + " for " + patient.getCondition();
+    }
+
 }
