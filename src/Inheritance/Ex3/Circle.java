@@ -1,4 +1,4 @@
-package Inheritance.CircleEllipse;
+package Inheritance.Ex3;
 import java.util.*;
 import javax.swing.JOptionPane;
 
@@ -9,13 +9,13 @@ public class Circle
     protected int x;
     protected int y;
     static int counter = 0;
-    double radius;
+    protected double radius;
     Circle()
     {
         //check this() comment in the 2nd constructor
         counter++;
     }
-    Circle(int x, int y, int r)
+    Circle(int x, int y, double radius)
     {
         //Constructor chaining to avoid calculating the number of created objects twice using counter++ in both constructor.
         //We can use add Counter++ only once
@@ -23,9 +23,9 @@ public class Circle
         this.x = x;
         this.y = y;
 
-        if(r > 0)
+        if(radius > 0)
         {
-            this.radius = r;
+            this.radius = radius;
         }
         else
         {
@@ -102,6 +102,8 @@ public class Circle
 
         System.out.println("Number of created Circles: " + Circle.counter);
 
+        Ellipse Elli = new Ellipse(1,2,2.6, 4.1);
+        System.out.println("The Ellipse Area = " + Elli.getEllipseArea());
     }
 
 }
