@@ -1,18 +1,22 @@
 package AbstractPrinciple.EX4;
 
-class TvRemote extends Device
+public class TV extends Device
 {
+    public TV(int YearMade)
+    {
+        super(YearMade);
+    }
 
     @Override
     void DeviceOff()
     {
-        System.out.println("Tv turned off");
+        System.out.println("Device turned off");
 
     }
     @Override
     void DeviceOn()
     {
-        System.out.println("Tv turned on");
+        System.out.println("Device turned on");
 
     }
 }

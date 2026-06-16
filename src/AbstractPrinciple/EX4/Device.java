@@ -1,22 +1,23 @@
 package AbstractPrinciple.EX4;
 
-abstract class TV
+abstract class Device
 {
 
-    String RemoteType;
+    int YearMade;
     //constructor
-    public TV(String RemoteType)
+    public Device(int YearMade)
     {
-        this.RemoteType = RemoteType;
+        this.YearMade = YearMade;
     }
     //Abstract method
-    abstract void turnOn();
-    abstract void turnOff();
+    abstract void DeviceOn();
+    abstract void DeviceOff();
 
-    //Concrete Method
-    String getRemoteType()
+    //concrete  method (Hidden here,in the abstract class(the implementation is here) however it still does not appear in the
+    //child class and the child can still use it.
+    String getManufacturingYear()
     {
-        return this.RemoteType;
+        return "Manufactured by: " +  this.YearMade;
     }
 
 }
