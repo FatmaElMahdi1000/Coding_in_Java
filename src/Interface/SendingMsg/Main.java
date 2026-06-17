@@ -1,4 +1,4 @@
-package Interface;
+package Interface.SendingMsg;
 import java.util.ArrayList;
 
 import java.util.List;

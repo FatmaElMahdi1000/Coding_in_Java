@@ -1,4 +1,4 @@
-package Interface;
+package Interface.SendingMsg;
 
  class EmailNotification implements Sendable{
 

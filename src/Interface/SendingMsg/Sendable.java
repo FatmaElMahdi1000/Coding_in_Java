@@ -1,4 +1,4 @@
-package Interface;
+package Interface.SendingMsg;
 
 //The "Can-Do" Capability (Basic)
 interface Sendable {
